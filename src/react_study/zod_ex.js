@@ -1,5 +1,6 @@
 import z from "zod";
 
+// Zod: 입력값이 올바른지 검사하는 스키마 기반 검증 라이브러리.
 function validateAndLog(schema, value)
 {
     try 
