@@ -6,6 +6,8 @@ import { googleSignIn } from "./auth_google_signIn";
 import { signUp } from "./authSignUp";
 import { uploadAvater } from "./storage";
 import { updateProfile } from "firebase/auth";
+import { useContext } from "react";
+import { AuthContext } from "../contexts/AuthProvider";
 
 // 공통 옵션
 const TOAST_OPTIONS = 
