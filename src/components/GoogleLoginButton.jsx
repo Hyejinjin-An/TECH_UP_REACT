@@ -5,7 +5,7 @@ import { toaster } from "./ui/toaster";
 import authService from "../service/authService";
 
 
-export default function GoogleLoginButton() 
+export default function GoogleLoginButton(isSubmitting) 
 {
   const {loginWithGoogle} = authService();
   // TODO 로그인 결과로 user 등록하기
@@ -27,6 +27,8 @@ export default function GoogleLoginButton()
       width="100%"
       onClick={handleGoogleLogin}
       _hover={{ bg: "gray.400" }}
+      variant="outline"
+      loading={isSubmitting}
     >
       <Box 
         as="img" 
